@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, rgb(144, 245, 151) 0%, rgb(206, 243, 160) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+.quiz-container {
+    width: 450px;
+    height: 550px;
+    background-color: #FFF;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px 2px rgba(0, 0, 0, 0.16);
+}
+
+.start-card, .quiz-card, .end-card {
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+    text-align: center;
+}
+
+section.active {
+    transform: translate(-50%, -50%)
+}
+.deactive {
+    transform: translateY(-200vh)
+}
+.start-card h1{
+     margin-top: 130px;
+     text-align: center;
+}
+
+.start-card p {
+    font-size: 18px;
+    margin: 50px auto;
+    line-height: 28px;
+    text-align: left
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(22, 174, 22);
+    color: white;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: rgb(6, 126, 6);
+    cursor: pointer;
+}
+
+.quiz-card h1{
+    margin-top: 30px
+}
+
+.quiz-card aside {
+    margin: 15px auto 10px auto;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 550;
+    letter-spacing: 1.5px;
+}
+.question-count {
+    padding: 3px 8px;
+}
+.time-left {
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: rgb(102, 210, 102);
+}
+hr {
+    border: none;
+    border-top: 2.5px solid rgb(6, 126, 6);
+}
+article {
+    text-align: left;
+    height: 260px;
+}
+.question-context {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.option{
+    padding: 10px 5px;
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+}
+.option:hover {
+    border-color:rgb(29, 156, 29)
+}
+.option input {
+    margin: auto 10px;
+}
+.option label {
+    padding-right: 50px;
+}
+.option label:hover {
+    cursor: pointer;
+}
+
+.icon {
+    margin-top: 150px;
+    font-size: 100px;
+    color: #edaf27;
+    margin-bottom: 10px;
+}
+
+.end-card .score {
+    margin-top: 10px;
+    margin-bottom: 60px
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>js quize test</title>
+</head>
+<body>
+    <main class="quiz-container">
+        <section class="start-card">
+            <h1>Simple Javascript Quiz App</h1>
+            <p>You will take <strong>5 questions</strong> in this quiz. Each question has a time limit of <strong>12 seconds</strong>, it will show you the correct answer after you make your selection. You will get a final score based on your answers.</p>
+            <button class="btn-start">Start Quiz</button>
+        </section>
+        <section class="quiz-card deactive">
+            <header>
+                <h1>Simple Javascript Quiz App</h1>
+            </header>
+            <aside>
+                <div class="question-count">
+                    <!-- insert question count number / total number -->
+                </div>
+                <div class="time-left">Time Left: <span class="timer">12</span></div>
+                <!-- update timer from 12 to 0 -->
+            </aside>
+            <hr />
+            <article>
+                <div class="question-context">
+                    <!-- insert question -->
+                </div>
+                <div class="options">
+                    <!-- insert options -->
+                    <div class="option">
+                        <input type="radio" id="a" name="option"/>
+                        <label id="option-a" for="a">option1</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="b" name="option"/>
+                        <label id="option-b" for="b">option2</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="c" name="option"/>
+                        <label id="option-c" for="c">option3</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="d" name="option"/>
+                        <label id="option-d" for="d">option4</label>
+                    </div>
+                </div>
+            </article>
+            <footer>
+                <button class="btn-next">Next Question</button>
+            </footer>
+        </section>
+        <section class="end-card deactive">
+            <div class="icon"><i class="fas fa-smile"></i></div>
+            <p>Congrats! You have completed the quize!</p>
+            <div class="score">
+                <!-- insert final score -->
+            </div>
+            <button class="btn-exit">Exit</button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
