@@ -1,7 +1,7 @@
 # js simple quiz app
 # Overview
 Created a quiz app to practice js and css. <br>
-Each question will have question number and time limit bar. User will see final score at the end. 
+Each question will have question number and time limit bar. User will see final score at the end. <br>
 https://pangzei3.github.io/quiz-app/
 
 
